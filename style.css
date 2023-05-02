@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Delicious Curls Bold';
+    src: url('delicious_curls_bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner
+{
+    background-color: #F5F5F5;
+    width: 100%;
+    max-height: 500px;
+}
+.banner img
+{
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+}
+.banner h1
+{
+    display: inline-block;
+    font-size: 100px;
+    font-family: "Delicious Curls Bold";
+    margin-left: 25px;
+}
+.socials
+{
+    display: flex;
+    justify-content: right;
+}
+.social
+{
+    padding: 10px;
+    font-size: 26px;
+}
+#angle-down, #angle-up
+{
+    font-size: 60px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.main
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.menu
+{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+}
+.content
+{
+    font-family: 'Goudy Stout', sans-serif;
+}
