@@ -4,6 +4,14 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'ITCKRIST';
+    src: url('ITCKRIST.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 a
 {
@@ -22,9 +30,12 @@ a
     background-color: #F5F5F5;
     width: 100%;
     max-height: 500px;
+    justify-content: center;
+    align-items: center;
 }
 .banner img
 {
+    display: inline-block;
     width: 25%;
     height: 25%;
     border-radius: 50%;
@@ -64,9 +75,31 @@ a
     justify-content: right;
     align-items: flex-end;
     flex-direction: column;
-    width: 100%;
+    width: 98%;
+    font-family: "ITCKRIST", sans-serif;
+    font-size: 40px;
+}
+#main_list
+{
+    list-style-type: "♥ ";
 }
 .content
 {
     font-family: 'Goudy Stout', sans-serif;
+}
+.photos
+{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    text-align: center;
+}
+.photos img
+{
+    width: 225px;
+    height: 225px;
+}
+.main-photo
+{
+    padding: 50px;
 }
