@@ -2,9 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Spongebob</title>
+    <title>Spongebob Squarepants</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/goudy-stout" rel="stylesheet">
+    <link href="https://www.dafontfree.net/embed/a3Jpc3Rlbi1pdGMtcmVndWxhciZkYXRhLzI1L2svMTMxNjMwL0lUQ0tSSVNULnR0Zg" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<p>Some text and photos</p>
+<div class="container">
+    <div class="banner">
+        <div class="socials">
+            <span class="social" id="facebook">
+                <a href="https://www.facebook.com/asia.stasiak.6"><i class="fa-brands fa-facebook"></i></a>
+            </span>
+            <span class="social" id="instagram">
+                <a href="https://www.instagram.com/asia_stasiak_/?igshid=YmMyMTA2M2Y%3D"><i class="fa-brands fa-instagram"></i></a>
+            </span>
+            <span class="social" id="youtube">
+                <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+            </span>
+            <span class="social" id="tiktok">
+               <a href="https://www.tiktok.com/@asiasart6?_t=8bzYEgGUVoo&_r=1"> <i class="fa-brands fa-tiktok"></i> </a>
+            </span>
+        </div>
+        <a href="../index.html"><img src="../me.jpg" alt="Me">
+            <h1>Asia's art</h1></a>
+    </div>
+    <div class="main">
+        <div class="menu">
+            <i class="fa fa-angle-down" id="angle-down" onclick="showMenu()"></i>
+            <i class="fa fa-angle-up" id="angle-up" onclick="hideMenu()"></i>
+            <div>
+                <ul id="main_list">
+                    <li>Paintings</li>
+                    <ul class="paintings">
+                        <a href="../paintings/mylittlepony.html"><li>My Little Pony</li></a>
+                        <a href="../paintings/spongebob.html"><li>Spongebob</li></a>
+                        <a href="../paintings/hellokitty.html"><li>Hello Kitty</li></a>
+                        <a href="../paintings/winx.html"><li>Winx</li></a>
+                    </ul>
+                    <a href="../portfolio/portfolio.html"><li>Portfolio</li></a>
+                    <a href="../reviews/reviews.html"><li>Reviews</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="photos" id="photos1">
+                <div class="main-photo">
+                    <img src="../imgs/sponge/1.jpg">
+                    <p>HAPPY SPONGE</p>
+                </div>
+                <div class="main-photo">
+                    <img src="../imgs/sponge/2.jpg">
+                    <p>LOVELY SPONGE</p>
+                </div>
+                <div class="main-photo">
+                    <img src="../imgs/sponge/3.jpg">
+                    <p>CUTE SPONGE</p>
+                </div>
+            </div>
+            <div class="photos" id="photos2">
+                <div class="main-photo">
+                    <img src="../imgs/sponge/4.jpg">
+                    <p>PATRICK STAR</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="cScript.js"></script>
 </body>
 </html>
