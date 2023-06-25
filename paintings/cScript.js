@@ -3,6 +3,10 @@ let angle_up = document.getElementById("angle-up")
 let main_list = document.getElementById("main_list")
 let photos1 = document.getElementById("photos1")
 let photos2 = document.getElementById("photos2")
+let content = document.getElementById("content")
+let allParagraphs = document.getElementsByTagName("p");
+
+
 
 main_list.style.display = "none"
 angle_up.style.display = "none"
@@ -13,6 +17,11 @@ function showMenu()
     angle_up.style.display = ""
     photos1.style.flexDirection = "column"
     photos2.style.flexDirection = "column"
+    content.style.marginLeft = "15%"
+    content.style.width = "35%"
+    for (let i=0, max=allParagraphs.length; i < max; i++) {
+        allParagraphs[i].style.marginLeft= "30px"
+    }
 }
 function hideMenu()
 {
@@ -21,4 +30,9 @@ function hideMenu()
     angle_up.style.display = "none"
     photos1.style.flexDirection = "row"
     photos2.style.flexDirection = "row"
+    content.style.marginLeft = ""
+    content.style.width = ""
+    for (let i=0, max=allParagraphs.length; i < max; i++) {
+        allParagraphs[i].style.marginLeft= ""
+    }
 }

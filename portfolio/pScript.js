@@ -8,6 +8,8 @@ let photos4 = document.getElementById("photos4")
 let photos5 = document.getElementById("photos5")
 let photos6 = document.getElementById("photos6")
 let photos7 = document.getElementById("photos7")
+let content = document.getElementById("content")
+let allParagraphs = document.getElementsByTagName("p");
 
 main_list.style.display = "none"
 angle_up.style.display = "none"
@@ -23,6 +25,11 @@ function showMenu()
     photos5.style.flexDirection = "column"
     photos6.style.flexDirection = "column"
     photos7.style.flexDirection = "column"
+    content.style.marginLeft = "15%"
+    content.style.width = "35%"
+    for (let i=0, max=allParagraphs.length; i < max; i++) {
+        allParagraphs[i].style.marginLeft= "30px"
+    }
 }
 function hideMenu()
 {
@@ -36,4 +43,9 @@ function hideMenu()
     photos5.style.flexDirection = "row"
     photos6.style.flexDirection = "row"
     photos7.style.flexDirection = "row"
+    content.style.marginLeft = ""
+    content.style.width = ""
+    for (let i=0, max=allParagraphs.length; i < max; i++) {
+        allParagraphs[i].style.marginLeft= ""
+    }
 }

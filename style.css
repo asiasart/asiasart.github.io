@@ -10,9 +10,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
-
 a
 {
     text-decoration: none;
@@ -29,13 +26,12 @@ a
 {
     background-color: #F5F5F5;
     width: 100%;
-    max-height: 500px;
+    padding-bottom: 20px;
     justify-content: center;
     align-items: center;
 }
 .banner img
 {
-    display: inline-block;
     width: 25%;
     height: 25%;
     border-radius: 50%;
@@ -46,6 +42,15 @@ a
     font-size: 100px;
     font-family: "Delicious Curls Bold";
     margin-left: 25px;
+    position: absolute;
+    top: 90px;
+}
+.bannerHeader
+{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
 .socials
 {
@@ -67,7 +72,7 @@ a
 {
     display: flex;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
 }
 .menu
 {
@@ -75,9 +80,9 @@ a
     justify-content: right;
     align-items: flex-end;
     flex-direction: column;
-    width: 98%;
     font-family: "ITCKRIST", sans-serif;
     font-size: 40px;
+    margin-left: 25%;
 }
 #main_list
 {
@@ -85,6 +90,7 @@ a
 }
 .content
 {
+    margin-top: 5%;
     font-family: 'Goudy Stout', sans-serif;
 }
 .photos
