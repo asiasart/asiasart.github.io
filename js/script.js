@@ -4,9 +4,19 @@ let main_list = document.getElementById("main_list")
 let photos = document.getElementById("photos")
 let content = document.getElementById("content")
 let allParagraphs = document.getElementsByTagName("p");
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-main_list.style.display = "none"
-angle_up.style.display = "none"
+if(isMobile)
+{
+    angle_up.style.display = "none"
+    angle_down.style.display = "none"
+}
+else
+{
+    main_list.style.display = "none"
+    angle_up.style.display = "none"
+}
+
 function showMenu()
 {
     angle_down.style.display = 'none'

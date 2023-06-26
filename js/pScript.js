@@ -3,10 +3,20 @@ let angle_up = document.getElementById("angle-up")
 let main_list = document.getElementById("main_list")
 let content = document.getElementById("content")
 let menu = document.getElementById("menu")
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-main_list.style.display = "n"
-angle_up.style.display = ""
-angle_down.style.display = "none"
+if(isMobile)
+{
+    angle_up.style.display = "none"
+    angle_down.style.display = "none"
+}
+else
+{
+    main_list.style.display = ""
+    angle_up.style.display = ""
+    angle_down.style.display = "none"
+}
+
 function showMenu()
 {
     angle_down.style.display = 'none'
